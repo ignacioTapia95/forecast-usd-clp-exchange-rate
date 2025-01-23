@@ -36,6 +36,10 @@ pip install -r requirements.txt
 
 **4. Ejecutar modelo**
 
+> ⚠️ **Nota importante:**
+>
+> La primera ejecución del modelo puede tomar más tiempo de lo esperado debido a la inicialización de dependencias, carga del modelo o preparación de datos. Las ejecuciones posteriores serán significativamente más rápidas.
+
 ```bash
 python main.py --last-train-date "[YYYY-MM-DD]" --confidence-level 0.95
 ```
