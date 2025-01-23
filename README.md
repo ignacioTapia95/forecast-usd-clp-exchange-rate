@@ -1,12 +1,16 @@
 # Modelo de Predicción Tipo de Cambio USD/CLP
 
+Este repositorio contiene un modelo de predicción diseñado para estimar el tipo de cambio entre el Dólar Estadounidense (USD) y el Peso Chileno (CLP) con un horizonte de tres días. El modelo utiliza técnicas de regresión lineal aplicadas a series de tiempo.
+
+Para más detalles de la metodologia ver [`Metodología`](src/METHODOLOGY.md)
+
 ## Instrucciones de Ejecucion:
 
 **1. Clonar repositorio**
 
 ```bash
-git clone https:/asdasd
-cd ___
+git clone https://github.com/ignacioTapia95/forecast-usd-clp-exchange-rate
+cd forecast-usd-clp-exchange-rate
 ```
 
 **2. Crear y activar entorno virtual**
