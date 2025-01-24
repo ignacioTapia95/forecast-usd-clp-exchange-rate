@@ -54,9 +54,9 @@ python main.py --last-train-date "2024-10-24" --confidence-level 0.95
 
 Generará las predicciones para las siguientes fechas:
 
-- 2024-10-24
 - 2024-10-25
 - 2024-10-26
+- 2024-10-27
 
 Si la fecha introducida no es un día hábil, esta se ajustará para el ultimo día hábil disponible. Lo mismo ocurre para las fechas de predicción, es decir, si la fecha a predecir no es un dia hábil, se reemplazará por el día hábil más próximo.
 
