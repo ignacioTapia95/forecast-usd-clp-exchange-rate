@@ -2,7 +2,7 @@
 
 Este repositorio contiene un modelo de predicción diseñado para estimar el tipo de cambio entre el Dólar Estadounidense (USD) y el Peso Chileno (CLP) con un horizonte de tres días. El modelo utiliza técnicas de regresión lineal aplicadas a series de tiempo.
 
-Para más detalles de la metodologia ver [`Metodología`](src/METHODOLOGY.md)
+Para más detalles de la metodologia ver [`Metodología`](docs/METHODOLOGY.md)
 
 ## Instrucciones de Ejecucion:
 
