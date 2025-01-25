@@ -1,3 +1,4 @@
+import os
 import argparse
 import pandas as pd
 import pprint
@@ -26,7 +27,8 @@ if __name__ == "__main__":
     args = parse_args()
 
     # Importar Datos
-    df = pd.read_csv("./data/raw/exchangeRateIATA.csv", sep=";")
+    file_path = os.path.join("data", "raw", "exchangeRateIATA.csv")
+    df = pd.read_csv(file_path, sep=";")
 
     # Se obtiene el Calendario de Mercado para excluir dias no hábiles.
     # Los días no habiles tienen retorno = 0.0 lo que introduce error en el cálculo de estimadores.
