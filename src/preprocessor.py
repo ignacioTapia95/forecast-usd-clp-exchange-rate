@@ -212,6 +212,9 @@ def train_inference_split(
         last_train_date = closest_date
 
     df_train = df.loc[df["dates"] <= last_train_date, :].reset_index(drop=True)
+    window_size = int(len(df_train) * 0.7)
+    df_train = df_train.iloc[-window_size:].reset_index(drop=True)
+
     df_inference = df.loc[df["dates"] ==
                           last_train_date, :].reset_index(drop=True)
 

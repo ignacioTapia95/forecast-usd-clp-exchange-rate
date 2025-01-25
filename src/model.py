@@ -112,9 +112,13 @@ class TimeSeriesLinearRegression(BaseEstimator, RegressorMixin):
 
         residuals = []
         n_samples = X.shape[0]
+        window_size = int(n_samples * .7)
 
-        for t in range(1, n_samples):
-            X_train, y_train = X[:t], y[:t]
+        for t in range(window_size, n_samples):
+            start = t - window_size
+            end = t
+
+            X_train, y_train = X[start:end], y[start:end]
             X_current, y_current = X[t].reshape(1, -1), y[t]
 
             temp_model = LinearRegression()
